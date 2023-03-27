@@ -4,8 +4,6 @@ Un semáforo es un mecanismo de sincronización que se utiliza en los sistemas o
 
 Básicamente, un semáforo es una variable entera que puede tomar valores enteros positivos y no negativos. Los procesos pueden realizar operaciones de espera y liberación en los semáforos para asegurar un acceso controlado a los recursos compartidos.
 
-Cuando un proceso desea acceder a un recurso compartido, primero debe hacer una operación de espera en el semáforo asociado a ese recurso. Si el valor del semáforo es positivo, entonces el proceso puede acceder al recurso y el semáforo se decrementa en uno. Si el valor del semáforo es cero, entonces el proceso se bloquea y se coloca en una cola de espera asociada al semáforo.
-
 Cuando un proceso termina de utilizar un recurso compartido, debe hacer una operación de liberación en el semáforo asociado a ese recurso. Esta operación incrementa el valor del semáforo en uno y permite que otro proceso en espera acceda al recurso.
 
 Los semáforos son una herramienta poderosa para la sincronización de procesos y la prevención de condiciones de carrera en los sistemas operativos. Sin embargo, su uso incorrecto puede llevar a problemas de deadlock o inanición.
