@@ -11,8 +11,15 @@ Cuando un proceso termina de utilizar un recurso compartido, debe hacer una oper
 Los semáforos son una herramienta poderosa para la sincronización de procesos y la prevención de condiciones de carrera en los sistemas operativos. Sin embargo, su uso incorrecto puede llevar a problemas de deadlock o inanición.
 
 Un semaforo S es una variable que aparte, de la inicialización, solo se puede acceder por medio de 2 operaciones atómicas y mutuamente exclusivas: 
-P=perate                                    V=vete
-Whaits(S)                                   Signal(S)
-P(S), Down(S)                                v(S), Up(S), Post(S) o Release(S)
+````
+P=perate                 
+Whaits(S)                                 
+P(S), Down(S)                               
+````
+````
+V=vete
+Signal(S)
+v(S), Up(S), Post(S) o Release(S)
+````
 
 Para evitar la espera ocupada: cuando un proceso tiene que esperar, se pondra en una cola de procesos bloqueados esperando un evento.
